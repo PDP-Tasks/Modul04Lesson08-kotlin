@@ -37,7 +37,6 @@ class FifthActivity : AppCompatActivity() {
 
     }
 
-
     fun fillPost(): ArrayList<Post> {
         posts = ArrayList()
         for (i in 0..10) {
@@ -46,23 +45,25 @@ class FifthActivity : AppCompatActivity() {
         }
         return posts
     }
-    fun fillMembers():ArrayList<Member>{
-        members=ArrayList()
-        for (i in 0..13){
-            members.add(Member("Odilber","+998942344432",R.drawable.icon_person))
-            members.add(Member("Otabek","+998945441524",R.drawable.icon_person))
+
+    fun fillMembers(): ArrayList<Member> {
+        members = ArrayList()
+
+        for (i in 0..13) {
+            members.add(Member("Odilber", "+998942344432", R.drawable.icon_person))
+            members.add(Member("Otabek", "+998945441524", R.drawable.icon_person))
         }
         return members
     }
-    fun fillUsers():ArrayList<User>{
-        users=ArrayList()
-        for (i in 0..13){
-            users.add(User("Azamat","+998942344432"))
-            users.add(User("Samandar","+998945441524"))
+
+    fun fillUsers(): ArrayList<User> {
+        users = ArrayList()
+        for (i in 0..13) {
+            users.add(User("Azamat", "+998942344432"))
+            users.add(User("Samandar", "+998945441524"))
         }
         return users
     }
-
 
 
 }
