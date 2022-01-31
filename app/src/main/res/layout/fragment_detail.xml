@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:id="@+id/lldetail"
+
+    android:layout_height="match_parent"
+    tools:context=".fragment.DetailFragment">
+
+    <ImageView
+        android:id="@+id/img_person_detail"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="150dp"/>
+    <TextView
+        android:id="@+id/tv_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/tv_detail_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="@string/app_name"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="70dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/call"
+            android:layout_height="70dp"/>
+        <ImageView
+            android:id="@+id/img_sms"
+            android:layout_margin="10dp"
+            android:layout_width="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sms"
+            android:adjustViewBounds="true"
+            android:layout_height="70dp"/>
+        <ImageView
+            android:id="@+id/img_video"
+            android:layout_width="70dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/video"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
